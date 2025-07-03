@@ -1,0 +1,71 @@
+/* bbt.css - Header et Main uniquement */
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 4px solid #7986cb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 0 0 15px 15px;
+    background-image: url('../images/fond-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Main */
+main {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Verdana', sans-serif;
+}
+
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
+
+main section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+main h2, main h3 {
+    color: #3f51b5;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 1.2em;
+}
+
+main img {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}

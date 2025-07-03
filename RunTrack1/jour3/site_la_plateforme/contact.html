@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - La Plateforme_</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="top-navbar" role="navigation" aria-label="Menu principal">
+      <a href="accueil.html" class="logo-link" aria-label="Accueil - La Plateforme_">
+        <img src="img/logo.png" alt="Logo La Plateforme_" class="logo" />
+      </a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu-principal">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- SECTION CONTACT PRINCIPALE -->
+  <main>
+    <section class="contact-section" aria-labelledby="contact-principal">
+      <div class="contact-intro">
+        <h2 id="contact-principal">La grande école du numérique pour tous</h2>
+        <p>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</p>
+        <img src="img/img_aceuill.jpg" alt="Image illustrant la prise de contact" />
+      </div>
+
+      <div class="contact-form-card" role="form" aria-label="Formulaire de contact La Plateforme">
+        <h3>La Plateforme / Contact</h3>
+        <p>« * » indique les champs nécessaires</p>
+        <form>
+          <fieldset>
+            <legend>Identité</legend>
+            <div class="form-row">
+              <label for="prefixe" class="sr-only">Préfixe</label>
+              <select id="prefixe" name="prefixe" required>
+                <option value="" disabled selected>Préfixe*</option>
+                <option value="Mr">Mr.</option>
+                <option value="Mme">Mme.</option>
+                <option value="Mx">Mx.</option>
+              </select>
+
+              <label for="prenom" class="sr-only">Prénom</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Prénom *" required />
+
+              <label for="nom" class="sr-only">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Nom *" required />
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone *</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="0123456789" pattern="[0-9\s\-+]{9,15}" required />
+          </div>
+
+          <div class="form-group">
+            <label for="motif">Motif du contact *</label>
+            <select id="motif" name="motif" required>
+              <option value="" disabled selected>Sélectionner un motif de contact*</option>
+              <option>Aide à l'orientation et informations sur les programmes</option>
+              <option>Relations Entreprises</option>
+              <option>Presse / Partenariat / Communication</option>
+              <option>Suivi de candidatures</option>
+              <option>Recrutement RH</option>
+              <option>Taxe d'apprentissage</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="optin" name="optin" />
+            <label for="optin">J'accepte de recevoir des informations de la part de La Plateforme</label>
+          </div>
+
+          <p class="legal">
+            Selon l'article L.223-2 du code de la consommation, il est rappelé que le consommateur peut user de son droit à s'inscrire sur la liste d'opposition au démarchage téléphonique bloctel : 
+            <a href="https://www.bloctel.gouv.fr/" target="_blank" rel="noopener noreferrer">bloctel.gouv.fr</a>
+          </p>
+
+          <button type="submit" class="btn-envoyer">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT RAPIDE -->
+    <section class="quick-contact" aria-label="Contact rapide">
+      <h3>Une autre question ?</h3>
+      <p>Nous sommes aussi joignables par :</p>
+      <ul>
+        <li>Email : <a href="mailto:contact@laplateforme.io">contact@laplateforme.io</a></li>
+        <li>Téléphone : 04.84.89.43.69, du lundi au vendredi de 9h à 17h</li>
+      </ul>
+      <div class="quick-social-icons" role="list">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="bottom-navbar" role="contentinfo" aria-label="Pied de page principal">
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Logo La Plateforme_" />
+        <p>La grande école du numérique pour tous</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <button class="btn-white">Rejoignez nos équipes</button>
+        <button class="btn-red">Télécharger la brochure</button>
+      </div>
+
+      <div class="footer-links" role="navigation" aria-label="Liens La Plateforme">
+        <h3>La Plateforme</h3>
+        <a href="Accueil.html">Accueil</a>
+        <a href="qui_sommes_nous.html">Qui sommes-nous ?</a>
+        <a href="#">Notre brochure</a>
+        <a href="#">Ils parlent de nous</a>
+        <a href="#">News</a>
+        <a href="#">Taxe d'apprentissage</a>
+      </div>
+
+      <div class="footer-links" role="navigation" aria-label="Liens Formations">
+        <h3>Les Formations</h3>
+        <a href="#">Bachelor IT</a>
+        <a href="#">Master of Science</a>
+        <a href="digital_lab.html">digital lab</a>
+        <a href="#">Développement</a>
+        <a href="ai-school.html">Ai-school</a>
+        <a href="#">Cybersécurité</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Informations</h3>
+        <p>8 rue d’Hozier, 13002 Marseille</p>
+        <p>Tél : 04.84.89.43.69</p>
+        <a href="contact.html" class="btn-contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer" role="contentinfo" aria-label="Mentions légales et droits">
+    <p>© La Plateforme - Établissement d'enseignement supérieur technique privé - Tous droits réservés. | Mentions légales | Cookies | Conditions générales de vente | Référent handicap : Christine Yorillo</p>
+  </footer>
+
+</body>
+</html>
